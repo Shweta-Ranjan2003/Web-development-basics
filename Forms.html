@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>This is HTML forms tutorial</h2>
+    <form action="backend.php">
+<!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. -->
+        <label for="name"> Name</label>
+        <div> <!-- The <span> is an in-line element and <div> is a block element. -->
+            <input type="text" name="myName" id="name">
+<!--  name is the name in which data after submission will be stored in backend  -->
+<!-- The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document. -->
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name="myRole">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name="myEmail">
+        </div>
+
+        <br>
+        <div>
+            Date: <input type="date" name="myDate">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name="myBonus">
+        </div>
+        <br>
+        <div>
+            Are you eligible?: <input type="checkbox" name="myEligibility" checked>
+<!-- if we write here checked then it will be by default checked in the form but can be unchecked -->
+        </div>
+        <br>
+        <div>
+            Gender: Male <input type="radio" name="myGender"> Female <input type="radio" name="myGender">
+            Other <input type="radio" name="myGender">
+<!--Radio buttons allows to select any one of the following options amongst all. -->
+        </div>
+
+        <br>
+        <div>
+            Write about yourself: <br><textarea name="myText" cols="90" rows="10"></textarea>
+        </div>
+
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf" selected>Swift</option> <!-- by default this will be selected -->
+            </select>
+        </div>
+        <br>
+
+        <div>
+            <input type="submit" value="Submit Now">
+            <input type="reset" value="Reset Now">
+        </div>
+    </form>
+</body>
+
+</html>
