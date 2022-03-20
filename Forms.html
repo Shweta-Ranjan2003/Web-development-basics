@@ -13,6 +13,8 @@
     <form action="backend.php">
 <!-- Whenever we add a <form> tag in the HTML, it is going to ask for some action for submitting that particular form in the backend for future reference. -->
         <label for="name"> Name</label>
+        <!-- in for we have to write the name of the id for which we are using this label (for and id should be same)
+        and this label is made for name. -->
         <div> <!-- The <span> is an in-line element and <div> is a block element. -->
             <input type="text" name="myName" id="name">
 <!--  name is the name in which data after submission will be stored in backend  -->
@@ -28,8 +30,9 @@
         </div>
 
         <br>
+        <label for="date">Date:</label>
         <div>
-            Date: <input type="date" name="myDate">
+             <input type="date" name="myDate" id="date">
         </div>
         <br>
         <div>
