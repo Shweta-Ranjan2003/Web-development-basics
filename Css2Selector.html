@@ -1,0 +1,49 @@
+<!-- CSS SELECTOR:- are used to find the element whose property will be set and are used to target the html elements and makes it easy for us to easily target single / multiple HTML elements in the markup
+Types of CSS selector:- 1. CSS element selector
+2. CSS id selector
+3. CSS class selector
+4. The CSS grouping selector 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+    <style>
+        p{
+            color:red;
+            border: 2px solid red;
+        } 
+        /* this was element selector and will make all p tag elements red except the one who already has there own separate style*/ 
+        #firstpara{
+            color: hotpink;
+            background-color: black;
+        }
+         /* this is id selector */
+        .redElement{  
+            color: red !important;
+        }
+        .bgblue{
+            color: black;
+            background-color: blue;
+        }
+        /* this is class selector */
+        footer, span{
+           background-color: pink;
+        }
+        /* this is grouping selector */
+    </style>
+</head>
+<body>
+    <h3>CSS Selectors</h3>
+    <p id="firstpara">This is a simple paragraph to demonstrate selector</p>
+    <p id="secondpara" class="redElement bgblue">This is another simple paragraph to demonstrate selector</p>
+    <div>
+        <p>This is yet another simple paragraph to demonstrate selector</p>
+    </div>
+    <span>this is span</span>
+    <footer>this is footer</footer>
+</body>
+</html>

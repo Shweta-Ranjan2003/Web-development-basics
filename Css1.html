@@ -1,0 +1,35 @@
+ <!-- Css stands for cascading style sheets and is used to style our web pages
+HTML is used to structure a website and Css takes responsibility to design and to make websites responsive
+ Syntax:- p{color : blue;} (p means selector(where?)) color is property and blue is value .
+ header , p.intro {background-color : red ; border-radius:3px;}
+ (group of selectors)         (declaration block)
+ 1. Inline CSS : CSS is added to the elements directly using style attribute
+ 2. Internal CSS : CSS is kept inside the head tags in <style> tags.
+ 3. External CSS : CSS is kept separately inside a .css style sheet. -->
+  
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Css 1st</title>
+     <style>
+         p{
+             color:yellow;
+             background-color: seagreen !important; 
+             /* !important is used it means though external CSS is written after wards and even if inline CSS is used the also background color will be taken this only which is marked important */
+            } 
+            /* This is internal CSS and */
+            </style>
+            <link rel="stylesheet" href="Css1.css" > 
+       <!-- this is external Css but precedence will be given to that Css which is return at last in internal and external Css -->
+ </head>
+ <body>
+     <h3>This is CSS tutorial</h3>
+     <!-- <p style="color:red; background-color: black;">This is inline CSS and it has most precedence as compare to external and internal css</p> -->
+     <p>This is inline CSS and it has most precedence as compare to external and internal css</p>
+
+ </body>
+ </html>
+ 
