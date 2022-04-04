@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Send+Flowers&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Rubik Glitch', cursive;
+            font-family: 'Send Flowers', cursive;
+        }
+
+        .container {
+            background-color: sandybrown;
+            border: 5px solid red;
+            margin: 50px auto;
+            /* auto will put it in centre */
+        }
+
+        .item {
+            background-color: rgb(249, 201, 209);
+            border: 7px solid hotpink;
+            margin: 15px 15px;
+            padding: 15px 15px;
+        }
+
+        #fruits {
+            float: left;
+            width: 48%;
+        }
+
+        #computer {
+            float: right;
+            width: 48%;
+        }
+
+        #Stationary {
+            clear: both;
+            /* if we apply clear left the it will not overlap with any float left element and same for clear right and float right */
+            width: 98%;
+        }
+
+        p,
+        h3 {
+            /* text-align: left;
+        text-align: right;
+        text-align: center; */
+            text-align: justify;
+        }
+
+        h1 {
+            background-color: black !important;
+            color: hotpink;
+            margin: auto;
+            width: 455px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="container">
+            Welcome to my store
+        </h1>
+        <div id="fruits" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quas a est ipsum voluptate nesciunt
+                tempora repellat expedita distinctio qui?
+            </p>
+        </div>
+        <div id="computer" class="item">
+            <h3>computer</h3>
+            <p id="computerpara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quas a est ipsum voluptate nesciunt
+                tempora repellat expedita distinctio qui?
+            </p>
+        </div>
+        <div id="Stationary" class="item">
+            <h3>Stationary</h3>
+            <p id="Stationarypara" class="para">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse quas a est ipsum voluptate
+                nesciunt tempora repellat expedita distinctio qui?
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
