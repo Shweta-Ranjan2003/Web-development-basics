@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Menu</title>
+    <style>
+   .navbar{
+       background-color: black;
+   }
+   .navbar ul{
+       overflow: auto;
+       /* so that bg color remains black of navbar otherwise after doing float right it will float outside from parent */
+   }
+   .navbar li{
+       float:right;
+       list-style: none;
+       margin: 10px 15px;
+   }
+   .navbar li a{
+      color: red;
+       padding: 3px 3px;
+       text-decoration: none;
+   }
+   .navbar li a:hover{
+       color: hotpink;
+   }
+   .search{
+       float: left;
+       columns: white;
+       padding: 15px 5px;
+   }
+   .navbar input{
+       border: 2px solid blue;
+       border-radius: 4px;
+       padding: 3px 10px;
+       width: 125px;
+   }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search the website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
