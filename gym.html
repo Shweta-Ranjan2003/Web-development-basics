@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Club</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Send+Flowers&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,100&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            background-color: black;
+        }
+        h3{
+            padding: 10px 20px;
+            margin: 0px 0px;
+        }
+        
+      .navbar{
+          color: white;
+          font-family: 'Rubik Glitch', cursive;
+          font-size: 30px;
+          border-top: 5px solid red;
+          border-left: 3px solid purple;
+          border-right: 3px solid purple;
+          border-bottom: 5px solid red;
+      }
+      .navbar ul{
+          overflow: auto;
+      }
+      .navbar li{
+        float:right;
+        font-size: 15px;
+       list-style: none;
+       margin: 1px 7px;
+       padding: 0px 7px;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .navbar li a{
+      color: red;
+       text-decoration: none;
+   }
+   .navbar li a:hover{
+       color: yellow;
+   }
+    .second{
+        float: left;
+        margin-top: 5px;
+        margin-left: 3px;
+    }
+    #img1{
+        float: left;
+        width: 50%;
+        margin: 10px 0px;
+    } 
+    #forms{
+        float: right;
+        width: 40%;
+        margin: 10px 10px;
+        padding: 5px 5px;
+        color: palegoldenrod;
+        background-image: url('https://images.app.goo.gl/korKV9WqESGfcW7V8');
+    background-repeat: no-repeat;    
+    background-position: top right;
+    }
+    input{
+        color: white;
+    }
+    .info{
+        clear: both;
+        color: white;
+        border: 2px solid grey;
+        font-family: 'Indie Flower', cursive;
+        margin: 5px 15px;
+        font-size: xx-large;
+    }
+    .events{
+        clear: both;
+        color: white;
+        border: 2px solid grey;
+        font-family: 'Barlow Condensed', sans-serif;
+        margin: 5px 15px;
+        font-size: xx-large;
+
+    }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <h3>Fitness <br> Club</h3>
+            <ul>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Trainings.html">Trainings</a></li>
+                <li><a href="Timetable.html">Timetable</a></li>
+                <li><a href="Nutrition.html">Nutrition</a></li>
+                <li><a href="Gallery.html">Gallery</a></li>
+            </ul>
+  </div>
+  <div class="second" id="img1">
+  <img src = "https://source.unsplash.com/300x300/?fitness,gym" alt = "Error loading image">
+  </div>
+  <form action="backend.php" id="forms" class="second">
+      <h4>Register Now</h4>
+  <div>
+  Name: <input type="text" name="name" id="name">
+  </div><br><div>
+  Email: <input type="email" name="email" id="email">
+  </div><br><div>
+  Date of Birth: <input type="date" name="DOB" id="Dob">
+  </div><br><div>
+  Contact no. <input type="number" name="contact" id="no.">
+  </div><br><div>
+  Membership: <select name="package" id="mypackage">
+      <option value="silver"> Silver </option>
+      <option value="gold"> Gold </option>
+      <option value="diamond" selected> Diamond </option>
+  </select>
+</div><br><div>
+    <input type="submit" value="Submit Now" >
+    <input type="reset" value="Reset Now">
+</div>
+</form>
+  </div>
+  <div class="info">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, unde odio nulla minus asperiores accusantium corrupti consectetur doloremque iste eligendi dicta quae hic excepturi vitae provident facere numquam quam possimus ad eaque. Distinctio tenetur sed omnis dicta praesentium molestias deserunt.</p>
+  </div>
+  <div class="events">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime maiores exercitationem error iusto at ad sit nam praesentium quod dicta, ut quas repudiandae esse laboriosam iure, veritatis voluptates ex perspiciatis voluptate! Voluptate voluptas dignissimos laborum sed rem nostrum doloribus a libero aliquid asperiores, perspiciatis eum, voluptatum commodi officia possimus illo!</p>
+  </div>
+</body>
+</html>
