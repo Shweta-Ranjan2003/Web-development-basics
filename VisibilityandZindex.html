@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and Z-index</title>
+    <style>
+        .box{
+            width: 170px;
+            height: 170px;
+            border: 2px solid black;
+        }
+        #box1{
+            position:relative;
+            top: 49px;
+            z-index: 35;
+            /* z-index will decide whether box1 will be on top of box2 or vice versa */
+            /* z-index will work only for position:relative , absolute , fixed and sticky . Not for static */
+            background-color: green;
+        }
+        #box2{
+            position: relative;
+            top: 14px;
+            z-index: 34;
+            /* visibility:hidden;  it hides the element but reserves the space occupied by it */
+            /* display: none; */
+            /*  it hides the element and the space occupied by it */
+            background-color: red;
+        }
+        #box3{
+            background-color: blue;
+        }
+        #box4{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <!-- div.box#box$*4 -->
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>
