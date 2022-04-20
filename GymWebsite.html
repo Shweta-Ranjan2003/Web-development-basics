@@ -8,7 +8,6 @@
     <title>Harry Fitness</title>
 </head>
 <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
 <style>
     /* CSS Reset */
     body {
@@ -16,11 +15,13 @@
         color: white;
         margin: 0px;
         padding: 0px;
-        background: url('img/bg.jpg');
+        background: url('https://source.unsplash.com/300x300/?gym') no-repeat center center/cover;
+        opacity: 5;
     }
 
     .left {
         display: inline-block;
+        /* we could also do inline but we did inline block so that we can widht height afterword */
         /* border: 2px solid red; */
         position: absolute;
         left: 60px;
@@ -29,11 +30,12 @@
 
     .left img {
         width: 136px;
-        filter: invert(100%);
+        /* filter: invert(100%); it is used for filter property to invert the img */
     }
 
     .left div {
         line-height: 19px;
+        /* sets the height of a line box . used to set the distance between lines of text. */
         font-size: 26px;
         text-align: center;
     }
@@ -42,11 +44,13 @@
         display: block;
         width: 36%;
         margin: 29px auto;
+        /* for doing margin auto there are 2 requirement - display block , width(that is not auto) , it must not float , must have fixed or absolute position*/
         /* border: 2px solid green; */
     }
 
     .right {
         position: absolute;
+        /* absolute means now it will take adjustment according to it parent(header here) */
         right: 34px;
         top: 43px;
         display: inline-block;
@@ -86,6 +90,7 @@
         border-radius: 10px;
         font-size: 20px;
         cursor: pointer;
+        /* the cursor will change to pointer when hover over it. */
     }
 
     .btn:hover {
@@ -127,8 +132,8 @@
     <header class="header">
         <!-- Left box for logo -->
         <div class="left">
-            <img src="img/gym.png" alt="">
-            <div>Harry Fitness</div>
+            <img src="https://images.app.goo.gl/6rmkr7w4sczmHd8A6" alt="">
+            <div>Shweta Fitness</div>
         </div>
         <!-- Mid box for navbar -->
         <div class="mid">
