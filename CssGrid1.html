@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Grid</title>
+    <style>
+    .container{
+        display: grid;
+        /* grid-template-columns: 300px 100px 100px; */
+        /* it means make 3 coloumn and give them width of 300px,100px,100px */
+        /* grid-template-columns: 300px auto 100px; */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        /* it means make 3 coloumn and give them width in ratio of 1:4:1  */
+        grid-template-columns: repeat(3,auto);
+        /*  it means make 3 coloumn and then divide all grid items accordingly*/
+        grid-gap: 1rem;
+        /* distance(margin) between grid items */
+    }
+    .item{
+        background-color: red;
+        border: 2px solid black;
+        padding: 15px 5px;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">This is Item-1</div>
+        <div class="item">This is Item-2</div>
+        <div class="item">This is Item-3</div>
+        <div class="item">This is Item-4</div>
+        <div class="item">This is Item-5</div>
+        <div class="item">This is Item-6</div>
+        <div class="item">This is Item-7</div>
+        <div class="item">This is Item-8</div>
+        <div class="item">This is Item-9</div>
+        <div class="item">This is Item-10</div>
+        <div class="item">This is Item-11</div>
+        <div class="item">This is Item-12</div>
+        <div class="item">This is Item-13</div>
+        <div class="item">This is Item-14</div>
+        <div class="item">This is Item-15</div>
+        <div class="item">This is Item-16</div>
+        <div class="item">This is Item-17</div>
+    </div>
+</body>
+</html>
