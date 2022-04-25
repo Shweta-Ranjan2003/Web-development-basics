@@ -1,0 +1,53 @@
+<!-- The HTML DOM (Document Object Model) is a standard object model and programming interface for HTML. It defines:
+
+The HTML elements as objects
+The properties of all HTML elements
+The methods to access all HTML elements
+The events for all HTML elements
+In other words: The HTML DOM is a standard for how to get, change, add, or delete HTML elements.
+By writing getElementById, we can target the HTML through its id. 
+way to get the content of an element is by using the innerHTML property.
+we can also extract the elements from HTML with the help of class name. If we want to find all the elements with same class name, use getElementsByClassName(). 
+If you want to find all HTML elements that match a specified CSS selector (id, class names, types, attributes, values of attributes, etc), use the querySelector()  method.
+use querySelectorAll() to target the elements. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id="main" class="container">
+        <ul id="nav">
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>More About Us</li>
+            <li>Contact Us</li>
+        </ul>
+    </div>
+    <div class="container">
+        Another Container
+    </div>
+    <script>
+        let main = document.getElementById('main');
+        console.log(main);
+        let nav = document.getElementById('nav');
+        console.log(nav); 
+        //The easiest way to get the content of an element is by using the innerHTML property.
+        //We can also change element in website through console by writing nav.innerHTML = "<li>xyz</li>"
+
+        let containers = document.getElementsByClassName('container'); //We can access it by index also in console by writing container[0] or container[1]
+        console.log(containers);
+        
+        // let sel = document.querySelector('#nav>li');
+        // console.log("Selector returns ", sel)
+
+        let sel = document.querySelectorAll('#nav>li');
+        console.log("Selector returns ", sel)
+
+    </script>
+</body>
+</html>
