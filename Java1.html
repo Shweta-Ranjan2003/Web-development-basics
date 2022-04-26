@@ -8,7 +8,7 @@
     <script>
         var a = 78;
         var b = "Harry";
-        c = 34.55; 
+        var c = 34.55; 
         // console.log(c);
 
         // Operators in JavaScript
@@ -17,20 +17,21 @@
         // 1. unary operator - It has single operand (x = -x)
         // Examples of unary operator
         c = -c;
-        // console.log(c);
+         console.log(c); //-34.55
         // 2. binary operator - It has two operand (x = x+6)
         // Examples of binary operator
-        c = 456+8;
+        // c = 456+8;
         // console.log(c);
 
         var num1 = 2;
         var num2 = 9;
 
         // Arithmetic operators in action in JavaScript
-        console.log("The value of num1 + num2 is "+ (num1 + num2));
-        console.log("The value of num1 - num2 is "+ (num1 - num2));
+        console.log("The value of (num1++)+(--num2) is" + ((num1++)+(--num2))); //10
+        console.log("The value of num1 - num2 is "+ (num1 - num2)); //-5
         console.log("The value of num1 * num2 is "+ (num1 * num2));
         console.log("The value of num1 / num2 is "+ (num1 / num2));
+        console.log("The value of num1 % num2 is "+ ((++num2) % (--num1))); //1
         console.log("The value of num1 ** num2 is "+ (num1 ** num2));
         console.log("The value of num1++ is "+ (num1++));
         console.log("The value of ++num1 is "+ (++num1));

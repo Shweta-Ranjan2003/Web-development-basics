@@ -47,13 +47,14 @@ Onload- The browser has finished loading the page
     </div>
     <button id="btn" onclick="toggleHide()">Show/Hide</button>
     <script>
-        let para = document.getElementById('para');
-        para.addEventListener('mouseover', function run(){
-            console.log('Mouse Inside')
-        });
+        
 
-        para.addEventListener('mouseout', function run(){
-            console.log('Mouse now went outside')
+        let para = document.getElementById('para');
+        para.addEventListener('mouseover',function run(){
+            console.log("mouse inside")
+        });
+        para.addEventListener('mouseout',function run(){
+            console.log('mouse now went outside')
         });
 
 

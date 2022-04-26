@@ -15,7 +15,6 @@
 console.log("This is tutorial 53");
 
 function greet(name, greetText="Greetings from JavaScript"){  //This is default value
-    let name1 = "Name1";
     console.log(greetText + " " + name);
     console.log(name + " is a good boy");
 }
@@ -37,11 +36,11 @@ greet(name, greetText1);
 greet(name1, greetText1);
 greet(name2, greetText1);
 greet(name3);
-// let returnVal = greet(name3);
-// console.log(returnVal)
+ let returnVal = greet(name3);
+ console.log(returnVal) //undefined because this function is not returning anything
 
-let returnVal = sum(1,2,3);
-console.log(returnVal)
+let returnVal1 = sum(1,2,3);
+console.log(returnVal1)
 
 </script>
 </html>

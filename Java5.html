@@ -14,24 +14,26 @@
         let myVar3 = true;
         let myVar4 = null;
         let myVar5 = undefined;
+        let myvar6 = 22.99;
+        //console.log(myvar6);
         
         // Object in javascript is as follows:-
 
-        // let employee = {
-        //     name: "Harry",  //name is key and harry is value
-        //     salary: 10,
-        //     channel: "CodeWithHarry",
+         let employee = {
+             name: "Harry",  //name is key and harry is value
+             salary: 10,
+             channel: "CodeWithHarry",
         // we can call every key in console like this employee.salary or channel etc. Or like this employee['name']
-        //     "channel 2": "ProgrammingWithHarry",
+             "channel 2": "ProgrammingWithHarry",
         // if we want to give gap in between of key name the we have to define it in " " and in console we have
         //to call it like employee['channel 2'] 
-        // }
-        // console.log(employee);
+         }
+         console.log(employee);
 
         //Array is defined like this :-
-        // let names = [1, 2, 4, "Harry", undefined];
         // let names = new Array(41, 2, 4, "Harry", undefined);
-        let names = new Array(23); //In this way, an array will be treated as an object. The new keyword is used to create a new object.
+        let names = new Array(); //In this way, an array will be treated as an object. The new keyword is used to create a new object.
+        names = [1, 4, 2, "Harry", undefined];
         console.log(names.length);
         names = names.sort();
         names.push("this is pushed");

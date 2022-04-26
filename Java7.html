@@ -17,15 +17,17 @@ The confirm() method displays a dialog box with a specified message, along with 
     <script>
         // Alert in in-browser JavaScript - Does not return anything
         // alert("This is a message"); 
+        alert("hello ,welcome");
 
         // Prompt in JS
-        // let name = prompt("What is your name?", "Guest");
-        // console.log(name);
+        //  let name = prompt("What is your name?", "Guest");
+        //  console.log(name);
+         console.log(prompt("What is your name?", "Guest"));
 
         // Confirm in JS
         let deletePost = confirm("Do you really want to delete this post?");
         
-        // console.log(deletePost);
+         console.log(deletePost); //it will return true or false to the console.
         if(deletePost){
             // Code to delete the post
             console.log("Your post has been deleted successfully");
