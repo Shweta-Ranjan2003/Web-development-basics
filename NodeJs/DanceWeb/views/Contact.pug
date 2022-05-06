@@ -11,10 +11,10 @@ block style
 block content
     div.container 
         h1 Contact Us
-        div.myform
+        form(action="/Contact" , method = "post", class = "Myform" )
             <input type="text" class = "myinput" name = "name" placeholder="Enter your name..">
-            <input type="phone" class = "myinput" name = "phone" placeholder="Enter your name..">
+            <input type="phone" class = "myinput" name = "phone" placeholder="Enter your Contact no.">
             <input type="email" class = "myinput" name = "email" placeholder="Enter your email..">
-            <input type="text" class = "myinput" name = "firstname" placeholder="Your name..">
+            <input type="text" class = "myinput" name = "address" placeholder="Your address..">
             button(class="btn")
                 | Submit
