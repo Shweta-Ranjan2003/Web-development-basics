@@ -1,8 +1,11 @@
 <!-- CSS SELECTOR:- are used to find the element whose property will be set and are used to target the html elements and makes it easy for us to easily target single / multiple HTML elements in the markup
 Types of CSS selector:- 1. CSS element selector
-2. CSS id selector
+2. CSS id selector - unique of each element
 3. CSS class selector
 4. The CSS grouping selector 
+
+Attribute Selector - eg p[draggable]{} means select all paragraph element with attribute draggable and we can even add the attribute value 
+Universal selector - *{}
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -24,16 +27,21 @@ Types of CSS selector:- 1. CSS element selector
          /* this is id selector */
         .redElement{  
             color: red !important;
+            background-color: blue;
         }
         .bgblue{
             color: black;
-            background-color: blue;
+            background-color: aqua;
         }
         /* this is class selector */
         footer, span{
            background-color: pink;
         }
         /* this is grouping selector */
+        p[draggable="true"]{
+            color: peachpuff;
+        }
+        /* This is attribute selector */
     </style>
 </head>
 <body>
@@ -41,7 +49,7 @@ Types of CSS selector:- 1. CSS element selector
     <p id="firstpara">This is a simple paragraph to demonstrate selector</p>
     <p id="secondpara" class="redElement bgblue">This is another simple paragraph to demonstrate selector</p>
     <div>
-        <p>This is yet another simple paragraph to demonstrate selector</p>
+        <p draggable="true">This is yet another simple paragraph to demonstrate selector</p>
     </div>
     <span>this is span</span>
     <footer>this is footer</footer>

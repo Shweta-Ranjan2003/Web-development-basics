@@ -14,19 +14,21 @@ HTML is used to structure a website and Css takes responsibility to design and t
      <meta http-equiv="X-UA-Compatible" content="IE=edge">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Css 1st</title>
+     <!-- <link rel="stylesheet" href="Css1.css" >  -->
      <style>
          p{
-             color:yellow;
-             background-color: seagreen !important; 
+             color:yellow !important;
+             background-color: seagreen ; 
              /* !important is used it means though external CSS is written after wards and even if inline CSS is used the also background color will be taken this only which is marked important */
             } 
             /* This is internal CSS and */
             </style>
-            <link rel="stylesheet" href="Css1.css" > 
+     <link rel="stylesheet" href="Css1.css" > 
+
        <!-- this is external Css but precedence will be given to that Css which is return at last in internal and external Css -->
  </head>
  <body>
-     <h3>This is CSS tutorial</h3>
+     <h3 style="color:hotpink">This is CSS tutorial</h3>
      <!-- <p style="color:red; background-color: black;">This is inline CSS and it has most precedence as compare to external and internal css</p> -->
      <p>This is inline CSS and it has most precedence as compare to external and internal css</p>
 

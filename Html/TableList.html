@@ -13,27 +13,29 @@
     <ul type="circle">
         <!-- by default its disc type but you can change it circle square etc. -->
         <li>this is first list item of unordered list</li>
-        <li>this is second list item of unordered list</li>
-        <ol>
-            <li>nesting of list.</li>
-            <li>nesting of list.</li>
-        </ol>
+        <li>this is second list item of unordered list
+            <ol start="2">
+                <li>nesting of list.</li>
+                <li>nesting of list.</li>
+            </ol>
+        </li>
         <li>this is third list item of unordered list</li>
     </ul>
     <ol type="I">
         <!--  by default its 1,2... but you can change it to I,i,a,A,1 etc. -->
-        <li>this is first list item of ordered list</li>
-        <ul>
-            <li>nesting of list and type not mentioned so it will use circle because earlier we used</li>
-            <li>circle for unordered list.</li>
-        </ul>
+        <li>this is first list item of ordered list
+            <ul>
+                <li>nesting of list and type not mentioned so it will use circle because earlier we used</li>
+                <li>circle for unordered list.</li>
+            </ul>
+        </li>
         <li>this is second list item of ordered list</li>
         <li>this is third list item of ordered list</li>
     </ol>
 
     <!-- TABLES -->
     <h3>HTML TABLES</h3>
-    <table>
+    <table cellspacing="20">
         <thead>
             <tr> <!-- tr for table row -->
                 <th>Name</th> <!-- th for table headers cells -->
@@ -43,21 +45,59 @@
         </thead>
         <tbody>
             <tr>
-                <td>Shweta</td> <!-- tb for table data cells -->
+                <td>Shweta 😊</td> <!-- tb for table data cells -->
                 <td>2003</td>
-                <td>Programmer</td>
+                <!-- <td> <img src="https://cdn.utaustinbootcamps.com/wp-content/uploads/sites/119/2020/12/tes_gen_blog_code7-1-800x412.jpg" alt="Programmer"> </td> -->
             </tr>
             <tr>
-                <td>Ashi</td>
+                <td>Ashi 😒</td>
                 <td>2004</td>
-                <td>Html</td>
+                <!-- <td> <img src="https://kinsta.com/wp-content/uploads/2021/11/Untitled-54.png" alt="HTML"> </td> -->
             </tr>
             <tr>
-                <td>Neelesh</td>
+                <td>Neelesh 😁</td>
                 <td>2002</td>
-                <td>CP</td>
+                <!-- <td> <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/Competitive-Programming.jpg" alt="CP"> </td> -->
             </tr>
         </tbody>
+    </table>
+<hr>
+    <table border="2">
+        <tr>
+              <td>
+                <table>
+                    <tr>
+                        <td>Pradyumn 😊</td> <!-- tb for table data cells -->
+                        <td>2003</td>
+                    </tr>
+                    <tr>
+                        <td>Arnav 😒</td>
+                        <td>2004</td>
+                    </tr>
+                    <tr>
+                        <td>Anshul 😁</td>
+                        <td>2002</td>
+                    </tr>
+                </table>
+              </td>
+        <td>
+            <table>
+                <tr>
+                <td>Shweta 😊</td> <!-- tb for table data cells -->
+                <td>2003</td>
+            </tr>
+            <tr>
+                <td>Ashi 😒</td>
+                <td>2004</td>
+            </tr>
+            <tr>
+                <td>Neelesh 😁</td>
+                <td>2002</td>
+            </tr>
+            </table>
+
+        </td>
+        </tr>
     </table>
 </body>
 

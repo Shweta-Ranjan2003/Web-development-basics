@@ -9,11 +9,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Glitch&family=Send+Flowers&display=swap" rel="stylesheet">
     <style>
+        /* fonts.google.com */
         #ffPrimary{
             font-family: cursive; 
-            /* cursive is web save fonts */
+            /* cursive is web safe fonts */
             font-size: 40px;
-            /* px is 1/96th of an inch */
+            /* 1px is 1/96th of an inch */
+            /* 1pt is 1/72nd inch */
+            /* 1em is 100% of parent - relative size */
+            /* 1rem is 100% of root - relative size to root element(html maybe)*/
+            /* font-size: xx-large , large */
         }
 
         /* Web safe fonts are the fonts that comes pre intalled  with your operating system
@@ -27,11 +32,14 @@
     }
         #fontfam{
             font-family: 'Rubik Glitch', cursive;
+            /* if rubik glitch is not available then generic font type cursive will be used */
 font-family: 'Send Flowers', cursive;
-font-weight: bold;
+text-align: center;
+
         }
         span{
-            font-weight: bold;
+            font-weight: bolder;
+            /* font weight can be normal or bold(keywords) , lighter or bolder(relative to parent), number(100-900) */
             font-style: italic;
         }
   </style>
