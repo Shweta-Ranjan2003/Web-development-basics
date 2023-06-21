@@ -1,0 +1,24 @@
+<!-- There are 4 types of level of importance of css rule
+1.Position:- if two or more css rule is applied on an element then the lower positioned css is applied
+2. Specificity:- element selector then class selector then attribute selector then id selector
+3. Type:- external style sheet then internal style sheet then inline style
+4. Importance :- !important keyword is the top most
+
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cascade</title>
+    <style>
+        #idd{
+            color: green  !important;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="idd" style="color: blue;">hello</h1>
+</body>
+</html>

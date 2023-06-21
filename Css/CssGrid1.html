@@ -12,11 +12,14 @@
         /* it means make 3 coloumn and give them width of 300px,100px,100px */
         /* grid-template-columns: 300px auto 100px; */
         /* grid-template-columns: 1fr 4fr 1fr; */
+        /* grid-template-rows: 1fr 1fr 1fr; */
         /* it means make 3 coloumn and give them width in ratio of 1:4:1  */
         grid-template-columns: repeat(3,auto);
         /*  it means make 3 coloumn and then divide all grid items accordingly*/
         grid-gap: 1rem;
         /* distance(margin) between grid items */
+
+        /* Default behaviour of grid is to take the full width but it only has as much height as it allows to fit content  */
     }
     .item{
         background-color: red;

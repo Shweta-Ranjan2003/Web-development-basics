@@ -1,0 +1,38 @@
+<!--  3 components:- container div , row div , items(col) 
+Auto fit:- bootstrap will automatically give each item equal space
+Bootstrap is responsive so if we define .container class then by default it will have different sizes for different screen
+there are bootstrap breakpoints for each type of screen extra small(<576px) , small(>=576px) -maybe mobile , medium(>=768px) -ipad , large(>=992px) -laptop, x-large(>=1200px) -desktop , xx-large(>=1400px)- tv, these values keeps on updating
+.container , .container-sm , .container-md , .container-lg , .container-xl , .container-xxl , .container-fluid (to specify at which point we want our container to be 100%)
+
+SIZED COLUMNS:- when instead of using col as a class we use col-2 , col-4 etc as a class which is basically telling this item will take 2/12 width 4/12 width if we think each of row having 12 column . 
+if we give 3 items col-md-2 , col-md-4, col-md-6 then they will have 2/12,4/12,6/12 width for medium screens and for larger screen , but for screen less than medium they will cover 100% width each as if they are of class col
+MULTIPLE BREAKPOINTS:- eg. col-sm-12 col-md-8 col-lg-4  it means for large devices and above it will have 4/12 , for medium devices 8/12 , for small devices 12/12(full width)
+if col-2 col-4 col is define on 3 items then last item will take the rest of the full width
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 Column System</title>
+    <!-- Included CDN link from getbootstrap.com -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <!-- https://appbrewery.github.io/bootstrap-layout/  -->
+    <div class="row">
+        <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+        <div class="col-xl-6 col-sm-12">50% desktop, 100% mobile</div>
+      </div>
+    <div class="row">
+        <div class="col-lg-6 col-sm-12 col-10">Column 1</div>
+        <div class="col-lg-3 col-sm-6 col-10">Column 2</div>
+        <div class="col-lg-3 col-sm-6 col-10 ">Column 3</div>
+      </div>
+    <div class="row">
+        <div class="col-xxl-1 col-xl-2 col-lg-4 col-md-6">Column 1</div>
+        <div class="col-xxl-11 col-xl-10 col-lg-8 col-md-6">Column 2</div>
+      </div>
+          
+</body>
+</html>

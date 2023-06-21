@@ -8,6 +8,23 @@
     <style>
     .grid{
         display: grid;
+        /*FIXED SIZING:- if we set grid template row or col size:100px 300px or rem then it will not show responsiveness
+        in order to have responsive website we use different sizing  
+        1. AUTO SIZING:- if we write grid-template-rows:100px auto;
+        then grid container takes 100% width and first col takes 100px and other col takes rest of the space 
+        BUT
+        its not the case in row , in row the other row will occupy the space of content
+        2. FRACTIONAL SIZING:- 1fr 2fr (1:2 ratio)
+        3. MINMAX SIZING:- grid-template-columns: 200px minmax(400px,800px)
+        it means if there is enough space we want our second col to take max 800px but if we shrink it then minimum 400px
+        4. REPEAT:- repeat(4,2fr) it means repeat 2fr size 4 times
+
+
+        if we do not make enough row and col lets say if there are 5 items and we make grid of 2*2 then
+        the remaining items will take the height of the content height and width of col of grid
+        OR
+        grid-auto-rows: 300px this means if extra items are there which are not fitted in grid then give then 300px height
+        */
         grid-template-rows: 1fr 1fr 4fr;
         /* The grid-template-rows property is used to divide the first, second, and third rows in given fractions */
         grid-auto-rows: 2fr;

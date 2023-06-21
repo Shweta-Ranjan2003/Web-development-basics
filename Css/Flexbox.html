@@ -1,11 +1,17 @@
-<!-- Flexbox is a 1-D layout meathod for laying out items in rows or columns
+<!-- For help refer css tricks flexbox website
+ and    https://yuangela.com/flexboxfroggy/
+    Flexbox is a 1-D layout meathod for laying out items in rows or columns
 CSS flexbox is a better way to align items into a container.
 Flexbox = flexible + box
 p          {color  :   blue} 
 selector   property    value
 flex container
+when flex-direction is row :-
 main axis = horizontal axis
 cross axis = vertical axis 
+when flex-direction is coloumn :-
+main axis = vertical axis
+cross axis = horizontal axis 
 flex item
 main size =  horizontal size
 cross size = vertical size -->
@@ -23,28 +29,50 @@ cross size = vertical size -->
          border: 2px solid black;
          /* Initialize the container as a flex box */
          display: flex;
-         /* Flex properties for flex container */
+         /* Flex properties for flex container and occupy 100% width because they are block */
+         /* display: inline-flex;    then all flex container will be inline */
+
          flex-direction: row; /*By default its row*/
          /* flex-direction: column;
          flex-direction: row-reverse;  
          flex-direction: column-reverse; */
-         flex-wrap: wrap-reverse;
-         flex-wrap: wrap; /*default value is no-wrap*/
-         
+
+         /* FLEX LAYOUT */
+         flex-wrap: wrap-reverse; /* it will wrap items from bottom to top */
+         flex-wrap: wrap; /*default value is nowrap which means if page width it fully occupied then it will shrink the items*/
+         /* wrap will wrap the items to next line - it is property on parent */
+
          flex-flow: column wrap; 
          /* this is a shorthand for flex direction and flex wrap together */
-         /* Justify content will justify the content in horizontal direction */
+
+         /* Justify content will justify the content along the main axis */
+         justify-content: flex-start;
+         justify-content: flex-end;
          justify-content: center;
          justify-content: space-between;
+         /* in space between the first and last element are stuck to the edges of container and space between all the items */
          justify-content: space-evenly;
+         /* the space between edge to first and last element and between all the items are equal */
          justify-content: space-around;
+         /* There is space around first and last element from the edge of the container */
          
-         /* Justifycontent in  vertical direction */
+         /* Justifycontents in  cross axis 
+         align items property doesn't works when flex-wrap is set to wrap
+         */
          align-items: flex-end;
          align-items: flex-start;
          align-items: stretch;
          align-items: center;
+
+         /* Align-content works when flex-wrap is set to wrap 
+         when the windows shrinks then align content tell how items will wrap*/
         }
+        /* 
+        flex-basis: 100px;  it will expand along the main axis
+        when the flex direction is coloumn the flex basis sets the height and when its row then it set the width
+        You cannot set flex-basis to the container - for eg if you want to set it to all div inside container set it like this
+        .container > *{ flex-basis:100px;}
+        */
         .item{
             width: 200px;
             height: 200px;
@@ -57,6 +85,8 @@ cross size = vertical size -->
          align-self: flex-start;
          align-self: center;
          align-self: flex-end;
+         /* align-items property we used in container gets applied to all items but 
+         if we want one item to have its own align to start or end etc then we can use align-self in the item */
      /* Flex properties for flex item */
      /* order: 2; */
      /* flex-grow: 2; */
@@ -76,7 +106,7 @@ cross size = vertical size -->
     </style>
 </head>
 <body>
-    <h1>This is Flexbox tutorial</h1>
+    <h1>This is Flexbox</h1>
     <div class="container">
     <div class="item" id="item1">First box</div>
     <div class="item" id="item2">Second box</div>

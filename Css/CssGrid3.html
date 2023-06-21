@@ -1,3 +1,5 @@
+<!-- The one big difference between flexbox and grid is grid allows overlapping of items. 
+https://appbrewery.github.io/gridgarden/ -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,16 +23,29 @@
         background-color: rgb(228, 188, 228);
         padding: 23px;
     }
+    /* to a specific box we can even set the max  order to make it either righmost or bottom most 
+    or we can set its position like
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    or shorthand
+    grid-area: 2 / 1 / 3 / 3 ; when you use grid area and expect rest items to behave as expected then use grid area for all of them.
+    */
+    
     .box:first-child{
-         /* grid-column-start: 1;
-        grid-column-end: 3; */
-        /* It will merge first and second cell(box) coloumn wise */
-        /* grid-row-start: 1;
-        grid-row-end: 3;  */
+        /* grid-column: span 2; 
+        /* it will merge 2 cell from line 1 to line 3 
+        OR*/
+       /* grid-column-start: 1;
+        grid-column-end: 3;  */
+        /* It will merge first and second cell(box) coloumn wise i.e from line no. 1 to line no. 3  same for row*/
+         /* grid-row-start: 1;
+        grid-row-end: 3;   */
         /* It will merge first and second cell(box) row wise */
-        grid-column: 1 / span 3;
-        grid-row: 1 / span 3;
-        /* it will also merge 3 cell coloumn or row wise. */
+         grid-column: 2 / span 3;
+        grid-row: 2 / span 3; 
+        /* it will also merge 3 cell coloumn or row wise. starting from line no. 2 */
     }
     </style>
 </head>

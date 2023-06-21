@@ -1,0 +1,128 @@
+<!-- Flex Sizing
+Content width< width< flex-basis < min-width/max-width
+if we shrink the page and it cant give the set flex basis or width 321then it will look for the min-width for each element up till it can
+max-width is all of the content lined up and occupying the ideal width in one line
+min-width is determined by the longest word in the sentence
+
+flex-basic:200px;
+max-width: 100px;
+max-width tell by how big each item will grow to
+max-width is small so each item will occupy only 100px if flex basis would have been small then item will occupy that size
+
+flex-basis:200px;
+min-width:300px;
+it tell how small each of the items can shrink to
+each item will take 300px;
+
+FLEX GROW AND FLEX SHRINK
+if flex-grow:1 and flex-shrink:0 then it will allow to grow the items size but not allow to shrink it from it initial size
+and vice versa. by default they are grow:0; shrink:1;
+
+SHORTHAND
+flex: 1 1 0;
+      grow,shrink,basis
+flex : 1;
+even shorthand for grow 1 shrink 1 and basis 0
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flexbox Pricing Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Sono', sans-serif;
+    }
+    .pricing-container{
+      display: flex;
+      gap: 2rem;
+      height: 100vh; /* if not do this then align items center will not work same*/
+      justify-content: center;
+      align-items: center;
+      
+    }
+    .pricing-plan{
+      flex:1; /*so that they are equal in width*/
+      max-width: 400px;
+      padding: 20px;
+      border-radius: 5px;
+      background-color: #f2f2f2;
+      text-align: center;
+    }
+    .plan-title{
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .plan-price{
+      font-weight: bold;
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+    .plan-features{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .plan-features li{
+      margin-bottom: 20px;
+      /* it adds space between li and button */
+    }
+    .plan-button{
+      color: #fff;
+      background-color: #ff6600;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      
+    }
+    /* Hint: What can you do with a media query and flexbox? */
+    @media (max-width: 1250px) {
+      .pricing-container{
+      flex-direction: column;
+      height: 100%;
+    }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="pricing-container">
+    <div class="pricing-plan">
+      <div class="plan-title">Basic</div>
+      <div class="plan-price">$9.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 10GB Storage</li>
+        <li>✅ 1 User</li>
+        <li>🚫 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Standard</div>
+      <div class="plan-price">$19.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 50GB Storage</li>
+        <li>✅ 5 Users</li>
+        <li>✅ Phone &amp; Email Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+    <div class="pricing-plan">
+      <div class="plan-title">Premium</div>
+      <div class="plan-price">$49.99/month</div>
+      <ul class="plan-features">
+        <li>✅ 100GB Storage</li>
+        <li>✅ 10 Users</li>
+        <li>✅ 24/7 Support</li>
+      </ul>
+      <button class="plan-button">Sign Up</a>
+    </div>
+  </div>
+
+</body>
+
+</html>
