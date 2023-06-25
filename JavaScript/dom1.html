@@ -1,0 +1,52 @@
+<!-- DOM:- document object model
+get property :- if there is a car or red color then car.colour will give red
+set property :- car.seat = 4; , it will set seat property to 4
+Meathod:-
+call method:-  car.drive();   (it is a method not function because it is associated with a object car)
+
+Properties:- innerHTML , style , firstChild
+Methods:- click(), appendChild() , setAttribute() .
+-->  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecting HTMl elements</title>
+    
+</head>
+<body>
+    <h1 id="title">Hello</h1>
+    <input type="checkbox">
+    <button class="btn">Click Me</button>
+    <ul id="list">
+        <li class="item"><a href="www.google.com">Google</a></li>
+        <li class="item">Second</li>
+        <li class="item">Third</li>
+    </ul>
+</body>
+<script>
+    //Selecting  HTML elements
+    document.getElementsByTagName("li"); //it will give array of all the elements of tagName li
+    document.getElementsByTagName("li")[1].style.color="purple";
+    //it will change color of third li
+    document.getElementsByTagName("li").length;
+    // document.getElementsByClassName("btn").style.color="red" //it will not work because its an array or all elements of class name btn do instead
+    document.getElementsByClassName("btn")[0].style.color="green";
+
+    document.getElementById("title").innerHTML="Good Bye";
+
+    //query selectors - same as css selector 
+    document.querySelector("h1"); 
+    document.querySelector("#title"); //id selector
+    document.querySelector(".btn"); //class selector
+    document.querySelector("li a").style.color = "Red"; //Hierarchical selector
+    document.querySelector("li.item"); //combining selector
+    document.querySelector("#list .item"); //Although there are three item class element but still it will select only the first one
+    //If you want to select all then
+    document.querySelectorAll("#list .item");
+    document.querySelectorAll("#list .item")[2].style.color = "pink"; //To select a specific element , here the third list item
+
+
+</script>
+</html>

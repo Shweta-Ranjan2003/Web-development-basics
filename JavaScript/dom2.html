@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating and changing </title>
+    <style>
+        .Invisible{
+            visibility: hidden;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="title"><strong>Hello</strong></h1>
+    <input type="checkbox">
+    <button class="btn">Click Me</button>
+    <ul id="list">
+        <li class="item"><a href="www.google.com">Google</a></li>
+        <li class="item">Second</li>
+        <li class="item">Third</li>
+    </ul>
+</body>
+<script>
+    //Manipulating and changing style
+    document.querySelector("h1").style.fontSize="10rem";
+    document.querySelector("button").style.backgroundColor = "yellow";
+
+    // add or remove class to an element
+    document.querySelector("button").classList.add("Invisible");
+    document.querySelector("button").classList.remove("Invisible");
+    // document.querySelector("button").classList.toggle("Invisible");
+
+    //Manipulating and changing text
+    document.querySelector("h1").innerHTML; // it will give everything inside h1 tag -> <strong>Hello</strong>
+    document.querySelector("h1").textContent; // Hello
+    document.querySelector("h1").innerHTML = "<em>Good Bye</em>";
+
+    //Manipulating and changing Attributes
+     document.querySelector("a").attributes; //href
+     document.querySelector("a").getAttribute("href"); //www.google.com
+     document.querySelector("a").setAttribute("href","https://www.bing.com"); 
+
+</script>
+</html>

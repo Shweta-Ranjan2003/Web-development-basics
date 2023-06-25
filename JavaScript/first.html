@@ -1,0 +1,77 @@
+<!-- https://github.com/rwaldron/idiomatic.js/ -->
+<!-- and mdn docs for any learning js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // alert gives pop up message
+    //alert("Hello");
+    // alert is a function , hello is a message , ; is end
+    
+    //Data types :- string , number , boolean
+    // console.log(2+3); //5
+    // console.log(typeof(true)); //boolean
+    // console.log(typeof("shweta")); //string
+    
+    //Variables (this will work on html files or in google developer tool -> sources -> snippets )
+    //var name = prompt("What is your name?");
+    //var is a keyword - a container , called name and it will store the input provided by user
+    //myname = "shweta";
+    // name is replaces by js
+    //alert("Hello " + name + " My name is " + myname);
+
+    //Naming Convention for variable:-
+    //It should not start with number or dollar or underscore (the only two special character allowed in var) , and should not have any space in between
+
+
+    //Strings
+    // var concatenation = "a"+" "+"b";
+    // console.log(concatenation); //a b
+    // console.log(concatenation.length); //3
+
+    //Slicing 
+    //var slicy=myname.slice(1,3);
+    // it means slice it from index 1 upto index 3 but not including index 3
+    //console.log(slicy); //hw
+
+    //Changing case
+    // var up = myname.toUpperCase();
+    // console.log(up);
+    // var down=up.toLowerCase();
+    // console.log(down);
+
+
+    //Maths
+    //+ - * / %(modulo) 
+    //increment x++ (post increment), ++x(pre increment)
+    //decrement x--(post decrement) , --x(pre decrement)
+    //To round of a number use Math.floor(x);
+
+    //Function
+    function greet(){
+        console.log("Hello "+prompt("What is you name?"));
+    }
+    function greetBot(name){
+        console.log("Hello "+name);
+    }
+    function returnIncrement(x){
+      return x+1;
+    }
+    
+
+greet();
+greetBot("Bot");
+//JavaScript does not support function overloading
+var x=returnIncrement(5);
+console.log(x);
+
+</script>    
+</html>

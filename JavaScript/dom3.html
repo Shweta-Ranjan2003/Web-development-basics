@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+// Object , Constructor(REMEBER CONSTRUCTOR DOES NOT FOLLOWS CAMELCASE CONVENTION ) 
+//Constructor function:-   
+function HotelStaff(name , experience , languages){
+        this.name = name;
+        this.experience = experience;
+        this.languages = languages;
+        this.ask = function(){
+            alert("Can I help you Sir/Mam?");
+        }
+    }
+    
+    //Creating object
+    var one = new HotelStaff("Tom",6,["English","Spanish"]);
+    var two= new HotelStaff("Mot",9,["Hindi","French"]);
+
+    console.log(two.name);
+    console.log(one.languages);
+    one.ask(); //for calling a object method
+
+</script>
+</html>
+
+<!-- Higher order functions:- which can take other functions as inputs. for example:- addEventListener
+ function add(num1, num2) {
+     return num1 + num2;
+     }
+     
+     function subtract(num1, num2) {
+     return num1 - num2;
+     }
+     
+     function calculator(num1, num2, operator) {
+     return operator(num1, num2);
+     }
+
+or
+document.addEventListener("keypress",respondTokey(event));
+here respondToKey is a callback function because it waits for a keypress to occur then it executes.
+TIP:- go to console of google and write debugger; the hold on shift and hit enter and then call the function you want to debug then click on down button(step into the next function call) on left. 
+
+//Read More about Callback Funtions.
+-->
