@@ -1,0 +1,19 @@
+An Application Programming Interface (API) is a set of commands , functions , protocols , and objects that
+programmers can use to create software or interact with an external system.
+
+API
+*Endpoint - https://api.kanye.rest/
+
+*Paths - https://v2.jokeapi.dev/joke/Programming
+
+*Parameters (goes in the end of url after ? and contains a key value pair) -
+ https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw&type=single
+
+*Authentication - Open weather (use your own api id instead of one provided by the default)
+https://api.openweathermap.org/data/2.5/weather?q=London&appid=2491895b3419cf7d235144c467cc7f60&units=metric
+
+
+
+Here as we can see its really difficult to add parameters in the url so to make it easy we can use an application called postman - in it we just have to write the url and down to it the parameters we want to add in form of key value pair.
+
+Postman returns the request in JSON format (JavaScript Object Notation)
