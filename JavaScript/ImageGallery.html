@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Image Gallery With Thumbnail</title>
+
+<style>
+.large-image {
+width: 590px;
+height: 400px;
+border: 2px solid lightblue;
+margin: auto;
+}
+
+#zoomImage {
+width: 100%;
+max-height: 100%;
+}
+
+.image-container {
+width: 590px;
+margin: auto;
+border: 2px solid black;
+margin-top: 4px;
+}
+
+.image-container > img {
+width: 112.5px;
+height: 200px;
+margin-top: 3px;
+}
+
+.image-container > img:nth-child(1) {
+margin-left: 6px;
+}
+</style>
+</head>
+<body>
+<div class="large-image">
+<img src="" alt="" id="zoomImage" />
+</div>
+
+<div class="image-container">
+<img src="https://source.unsplash.com/300x300/?random" alt="" id="image1" />
+<img src="https://source.unsplash.com/400x400/?random" alt="" id="image2" />
+<img src="https://source.unsplash.com/500x500/?random" alt="" id="image3" />
+<img src="https://source.unsplash.com/600x600/?random" alt="" id="image4" />
+<img src="https://source.unsplash.com/350x350/?random" alt="" id="image5" />
+</div>
+
+<script>
+const image1 = document.getElementById("image1");
+const image2 = document.getElementById("image2");
+const image3 = document.getElementById("image3");
+const image4 = document.getElementById("image4");
+const image5 = document.getElementById("image5");
+
+const zoom = document.getElementById("zoomImage");
+
+image1.addEventListener("click", () => {
+zoom.src = image1.src;
+});
+
+image2.addEventListener("click", () => {
+zoom.src = image2.src;
+});
+
+image3.addEventListener("click", () => {
+zoom.src = image3.src;
+});
+
+image4.addEventListener("click", () => {
+zoom.src = image4.src;
+});
+
+image5.addEventListener("click", () => {
+zoom.src = image5.src;
+});
+</script>
+</body>
+</html>

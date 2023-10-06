@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+#main{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    
+}
+header{
+    background-color: hotpink;
+    padding: 1rem 1.5rem;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 38px;
+}
+.menu li{
+    list-style: none;
+}
+.menu li a{
+    text-decoration: none;
+    color: orangered;
+    transition: all 0.5s ease-in-out;
+    height: 40px;
+    width: 70px;
+    display: block;
+    /* background-color: white; */
+    padding: 8px 12px;
+    border-radius: 12px;
+}
+.menu li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 28px;
+}
+.navhead h2{
+    color: plum;
+}
+.commonbtn{
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid white;
+    background-color: transparent;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    color: white;
+}
+.commonbtn::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-color: black;
+   width: 100%;
+   top: 0;
+   left: 0;
+   transform: translateX(-80px);
+   transition: all 0.3s ease-in;
+   z-index: -1;
+}
+.commonbtn:hover::after{
+    transform: translateX(0px);
+    
+}
+#home{
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.homehead h1{
+    color: white;
+    font-size: 6vw;
+    text-align: center;
+}
+.homebtn{
+    text-align: center;
+    margin-top: 48px;
+}
+.homebtn button{
+    background-color: pink;
+    box-shadow: inset 20px 14px 20px 4px #6d6262;
+}
+
+#about{
+    margin-top: 7.2rem;
+    overflow: hidden;
+}
+.aboutcontainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+    width: 80vw;
+}
+.aboutimg{
+    /* border: 2px solid red; */
+    background-image: url("https://source.unsplash.com/300x300/?random");
+    background-position: center;
+    background-size: cover;
+}
