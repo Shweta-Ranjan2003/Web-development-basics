@@ -42,11 +42,11 @@ use querySelectorAll() to target the elements. -->
         let containers = document.getElementsByClassName('container'); //We can access it by index also in console by writing container[0] or container[1]
         console.log(containers);
         
-        // let sel = document.querySelector('#nav>li');
-        // console.log("Selector returns ", sel)
+         let selec = document.querySelector('#nav>li');
+         console.log("Selector returns ", selec) //only Home
 
         let sel = document.querySelectorAll('#nav>li');
-        console.log("Selector returns ", sel)
+        console.log("Selector returns ", sel) //All 5
 
     </script>
 </body>

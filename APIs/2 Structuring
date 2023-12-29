@@ -1,0 +1,23 @@
+https://bored-api.appbrewery.com/
+
+Public API:-
+When your server talks to someone else's server through get or post request and then gets respond
+
+BaseURL/Endpoint 
+eg - https://bored-api.appbrewery.com/random - here random is the endpoint
+
+Query Parameters
+eg - https://bored-api.appbrewery.com/endpoint?query=value&query2=value&query3=value
+https://bored-api.appbrewery.com/filter?type=education
+
+
+Path Parameters
+eg- bored-api.appbrewery.com/endpoint/{path-parameter}
+it can be id , user name , key
+https://bored-api.appbrewery.com/activity/3943506
+
+The data we are requesting is coming back in JSON format-
+js object - name:"Shweta"
+json object- "name":"Shweta"
+js object -> json   json.stringify(data);
+json -> js object   json.parse(jsonData);

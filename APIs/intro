@@ -1,5 +1,8 @@
 An Application Programming Interface (API) is a set of commands , functions , protocols , and objects that
 programmers can use to create software or interact with an external system.
+API bridges the communication between different pieces of software
+
+REST API - api that follows certain rules . here we use http protocol to interact with api (get,post,put,patch,delete).
 
 API
 *Endpoint - https://api.kanye.rest/
@@ -17,3 +20,18 @@ https://api.openweathermap.org/data/2.5/weather?q=London&appid=2491895b3419cf7d2
 Here as we can see its really difficult to add parameters in the url so to make it easy we can use an application called postman - in it we just have to write the url and down to it the parameters we want to add in form of key value pair.
 
 Postman returns the request in JSON format (JavaScript Object Notation)
+eg - If we make a get request in postman to the endpoint https://api.wheretheiss.at/v1/satellites/25544
+we get
+{"name":"iss",
+"id":25544,
+"latitude":-5.6511725042551,
+"longitude":-131.39834431158,
+"altitude":415.42583539311,
+"velocity":27587.189250978,
+"visibility":"eclipsed",
+"footprint":4484.1185664919,
+"timestamp":1703409754,
+"daynum":2460302.8906713,
+"solar_lat":-23.418678621702,
+"solar_lon":39.203831771687,
+"units":"kilometers"}

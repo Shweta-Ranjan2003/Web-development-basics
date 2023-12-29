@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width , initial-scale=1.0">
+        <title>DAY</title>
+    </head>
+    <body>
+    <h1>Hey,<%= day %>,<%= advice %></h1>
+    </body>
+</html>
+
+
+<!-- 
+< %=   variable       %>   - JS Output  
+< %  console.log("hello") %>  - JS Execute ,it allows js to run in html file just use this sign
+< %-  <h1>hello</h1>  %>    - Render Html
+< %% %%>                   - Show < % or %> basically escape symbol
+< %# This is a comment %>   - Stop execution
+< %- include("<File Name>") %>  - insert another ejs file
+ -->
+
+
+<!-- 
+    index.js
+    let bowl=["Apples","Oranges","Pears"];
+    app.get("/",(req,res)=>{
+        res.render("index.ejs",{fruits:bowl});
+    });
+ -->
+
+ <!-- 
+    <body>
+        <ul>
+            < % for(let i=0;i<fruits.length;i++){ %>
+            <li>
+                < %= fruits[i] %>
+            </li>
+         < % } %>
+        </ul>
+    </body>
+  -->
