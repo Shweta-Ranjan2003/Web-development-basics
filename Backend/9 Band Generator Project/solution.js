@@ -5,6 +5,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.static("public"));
+//This line sets up Express to serve static files from a directory named "public".
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (req, res) => {

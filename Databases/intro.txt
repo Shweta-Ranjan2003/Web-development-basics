@@ -1,0 +1,62 @@
+1. SQL Database - Structured Query Language
+Data is stored in Table , and data forms relations
+between two or more table that why its also called
+Relational Database. 
+Eg - Oracle , Postgres etc
+
+
+2. NoSQL Database - NoSQL databases are document, 
+key-value, graph, or wide-column stores.
+Eg - Mongodb etc
+
+
+SQL - www.w3schools.com/sql/
+C - Create
+R - Read
+U - Update
+D - Delete
+
+//https://sqliteonline.com/#fiddle-5bbdbaef7288bo2ajn2wly03
+
+CREATE TABLE products(
+    id INT NOT NULL,
+    name STRING,
+    price MONEY,
+    PRIMARY KEY (id)
+);
+
+INSERT INTO products
+VALUES (1,"Pen",1.20)
+
+//When you want to enter detail in specific columns
+INSERT INTO products(id,name)
+VALUES (2,"Pencil")
+
+//Read
+SELECT * FROM 'products';
+SELECT name, price FROM 'products';
+SELECT * FROM products WHERE id=1
+
+//Update
+UPDATE products
+SET price=0.80
+WHERE id=2
+
+// Add one more col name stock
+ALTER TABLE products
+ADD stock INT
+
+UPDATE products
+SET stock=10
+WHERE id=1
+
+UPDATE products
+SET stock=12
+WHERE id=2
+
+//Delete
+DELETE FROM products
+WHERE id=2
+
+
+
