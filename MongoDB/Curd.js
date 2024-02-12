@@ -45,4 +45,28 @@ db.anotherCollection.insertOne({a:89})
 It will add another table named anotherCollection to your db
 db.items.updateOne({name:"Moto 30s"} , {$set:{price:2}}) 
 db.items.updateMany({name:"Moto 30s"} , {$set:{price:3 , rating:1}})
+
+
+//One to Many relationships
+db.products.insert(
+    {
+        id:3,
+        name:"Book",
+        price : 1.30,
+        stock : 43,
+        reviews:[
+            {
+                authorName: "Sally",
+                rating: 5,
+                review: "Best book ever!"
+            },
+            {
+                authorName: "John",
+                rating: 5,
+                review: "Awesome"
+            }
+        ]
+    }
+)
+
 */
